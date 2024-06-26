@@ -22,7 +22,7 @@ $(document).ready(function() {
     function updateAPIStatus() {
         $.ajax({
             type: "GET",
-            url: "http://0.0.0.0:5001/api/v1/status/",
+            url: "http://18.234.105.208:5002/api/v1/status/",
             success: function(response) {
                 if (response.status === "OK") {
                     $('DIV#api_status').addClass('available');
@@ -35,3 +35,4 @@ $(document).ready(function() {
 
     updateAPIStatus();
 });
+
